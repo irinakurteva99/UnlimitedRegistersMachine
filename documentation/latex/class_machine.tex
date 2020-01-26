@@ -1,0 +1,62 @@
+\hypertarget{class_machine}{}\section{Machine Class Reference}
+\label{class_machine}\index{Machine@{Machine}}
+
+
+the main class which represents the Unlimited Registers \mbox{\hyperlink{class_machine}{Machine}}  
+
+
+
+
+{\ttfamily \#include $<$Machine.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_machine_adb7a184832156b30040c73da8de7a669}\label{class_machine_adb7a184832156b30040c73da8de7a669}} 
+void \mbox{\hyperlink{class_machine_adb7a184832156b30040c73da8de7a669}{load}} (std\+::string file\+Name)
+\begin{DoxyCompactList}\small\item\em the function for /load File\+Name \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_a4850368483ad53fd3c8c63265be5364f}\label{class_machine_a4850368483ad53fd3c8c63265be5364f}} 
+void \mbox{\hyperlink{class_machine_a4850368483ad53fd3c8c63265be5364f}{add}} (std\+::string fil\+Name)
+\begin{DoxyCompactList}\small\item\em the function for /add File\+Name \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_a4762963ce19d476fe6285de31da3edc2}\label{class_machine_a4762963ce19d476fe6285de31da3edc2}} 
+void \mbox{\hyperlink{class_machine_a4762963ce19d476fe6285de31da3edc2}{add\+From\+String}} (std\+::string input, int, int)
+\begin{DoxyCompactList}\small\item\em used for adding commands from string, extacted from file or /quote command, the two ints are the memory and command offsets \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_af173bba6525394e5799d337c9172d27f}\label{class_machine_af173bba6525394e5799d337c9172d27f}} 
+void \mbox{\hyperlink{class_machine_af173bba6525394e5799d337c9172d27f}{zero\+Cells}} (int begin\+Index, int end\+Index)
+\begin{DoxyCompactList}\small\item\em used to zero the cells from index to index, if only one cell should be used, the two indexes are just the same \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_a69c8f925175f153c95bf6f8b7a8b7abf}\label{class_machine_a69c8f925175f153c95bf6f8b7a8b7abf}} 
+void \mbox{\hyperlink{class_machine_a69c8f925175f153c95bf6f8b7a8b7abf}{increase\+Cell}} (int index)
+\begin{DoxyCompactList}\small\item\em used for increasing the value in a cell \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_a6292542a71c47da0b55b23f036daed33}\label{class_machine_a6292542a71c47da0b55b23f036daed33}} 
+void \mbox{\hyperlink{class_machine_a6292542a71c47da0b55b23f036daed33}{set}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em used to set the value in cell number x to y \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_a95cdc0b6f199b1e124858f57022d677e}\label{class_machine_a95cdc0b6f199b1e124858f57022d677e}} 
+void \mbox{\hyperlink{class_machine_a95cdc0b6f199b1e124858f57022d677e}{move}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em move the value in cell y to cell x \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_ab0cdbd19e5ca743894593b7826103a82}\label{class_machine_ab0cdbd19e5ca743894593b7826103a82}} 
+void \mbox{\hyperlink{class_machine_ab0cdbd19e5ca743894593b7826103a82}{copy}} (int begin, int begin\+New, int length)
+\begin{DoxyCompactList}\small\item\em the function for /copy \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_a4b4928bc14eff97e52bb84b3f774dec6}\label{class_machine_a4b4928bc14eff97e52bb84b3f774dec6}} 
+void \mbox{\hyperlink{class_machine_a4b4928bc14eff97e52bb84b3f774dec6}{print}} (int begin\+Index, int end\+Index)
+\begin{DoxyCompactList}\small\item\em used for printing some part of the memory to the console, in /mem for example \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_a0cff28a3e26aa300f706db443710760b}\label{class_machine_a0cff28a3e26aa300f706db443710760b}} 
+void \mbox{\hyperlink{class_machine_a0cff28a3e26aa300f706db443710760b}{run}} ()
+\begin{DoxyCompactList}\small\item\em function for /run, executes all the commands loaded \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_ab7a85e0b128fce64575b8fb397d9cf79}\label{class_machine_ab7a85e0b128fce64575b8fb397d9cf79}} 
+void \mbox{\hyperlink{class_machine_ab7a85e0b128fce64575b8fb397d9cf79}{print\+Commands}} ()
+\begin{DoxyCompactList}\small\item\em function for /code, prints all loaded commands with their arguments to the console \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_a7cbfc00527df979e6774bf4a6615e6ee}\label{class_machine_a7cbfc00527df979e6774bf4a6615e6ee}} 
+int {\bfseries get\+Max\+Index\+Used} ()
+\item 
+\mbox{\Hypertarget{class_machine_a8549cef571ed3ece68d73e1e831e657c}\label{class_machine_a8549cef571ed3ece68d73e1e831e657c}} 
+int {\bfseries get\+Caps\+Lock\+Commands\+Size} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the main class which represents the Unlimited Registers \mbox{\hyperlink{class_machine}{Machine}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Machine.\+h\item 
+Machine.\+cpp\end{DoxyCompactItemize}

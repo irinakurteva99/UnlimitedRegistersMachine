@@ -1,0 +1,38 @@
+\hypertarget{struct_command}{}\section{Command Struct Reference}
+\label{struct_command}\index{Command@{Command}}
+
+
+the class which represents an instruction and its arguments  
+
+
+
+
+{\ttfamily \#include $<$Command.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_command_a03c4b22bae4643d28b7e2d026c4d6733}\label{struct_command_a03c4b22bae4643d28b7e2d026c4d6733}} 
+{\bfseries Command} (std\+::string \mbox{\hyperlink{struct_command_a8d66550a9895cbd96373a9a221fa2b25}{name}}, std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{struct_command_aefe1088200a0ac8d6305ddc4bfeccbf8}{arguments}})
+\item 
+\mbox{\Hypertarget{struct_command_a972afb9476a646bac95c0aac1575ac70}\label{struct_command_a972afb9476a646bac95c0aac1575ac70}} 
+void \mbox{\hyperlink{struct_command_a972afb9476a646bac95c0aac1575ac70}{add\+Parameters}} (std\+::stringstream \&, int offset, int caps\+Lock\+Offset)
+\begin{DoxyCompactList}\small\item\em used for adding parameters to an already created empty command \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_command_a8d66550a9895cbd96373a9a221fa2b25}\label{struct_command_a8d66550a9895cbd96373a9a221fa2b25}} 
+std\+::string \mbox{\hyperlink{struct_command_a8d66550a9895cbd96373a9a221fa2b25}{name}}
+\begin{DoxyCompactList}\small\item\em the name of the instruction \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_command_aefe1088200a0ac8d6305ddc4bfeccbf8}\label{struct_command_aefe1088200a0ac8d6305ddc4bfeccbf8}} 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{struct_command_aefe1088200a0ac8d6305ddc4bfeccbf8}{arguments}}
+\begin{DoxyCompactList}\small\item\em list of the parametes as strings so as to be the same format for all commands (/add and /quote need strings as their arguments) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the class which represents an instruction and its arguments 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Command.\+h\item 
+Command.\+cpp\end{DoxyCompactItemize}
